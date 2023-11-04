@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Service.Proxies;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.ServiceModel;
@@ -11,6 +12,13 @@ namespace Service.Client
     {
         static void Main(string[] args)
         {
+            ApciClient client = new ApciClient();
+            Console.WriteLine(client.GetApciUpdates());
+
+            ESWClient eSWClient = new ESWClient();
+            Console.WriteLine(eSWClient.GetSoftwareConfiguration());
+
+            Console.ReadLine();
         }
     }
 }

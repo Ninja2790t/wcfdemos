@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Service.Proxies
 {
-    public class ESWService : ClientBase<IESWService>, IESWService
+    public class ESWClient : ClientBase<IESWService>, IESWService
     {
         public string GetSoftwareConfiguration()
         {

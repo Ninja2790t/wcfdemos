@@ -22,6 +22,10 @@
 	- Create a class library project 
 	- Add System.ServiceModel.dll and service contract project (Services.Std.Interface) reference
 	- Create a proxy class for the service contract
+	- `#f03c15` NOTE: Seperate proxy project is created so that same code can be reused in multiple clients
 
-5. Create Service Client Project
+5. Create Service Client Project (Service.Client)
+	- Create a console application
+	- Refer System.ServiceModel and service proxy project (Service.Proxies)
+	- NOTE: Add the endpoint info of the services in <client> tag
 
