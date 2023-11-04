@@ -28,4 +28,14 @@
 	- Create a console application
 	- Refer System.ServiceModel and service proxy project (Service.Proxies)
 	- NOTE: Add the endpoint info of the services in <client> tag
+	- 
+
+
+Important Notes:
+
+1. Binding deals with transport of data between one point to other point.
+   So, if you are changing any binding related config changes, you need to do it both in Host and Client configuration files.
+
+2. bindingConfiguration is set for => <Endpoints>
+3. behaviorConfiguration is set for => <Service>
 
